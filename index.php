@@ -13,7 +13,7 @@
 						<tr> <?php 
 								if (isset ($_GET['set'])) {
 									if ($_GET['set'] == 3)
-										echo "<h1> Congratulations! Create account is successful! </h1>";
+										echo "<h1  style='color:red;'> Congratulations! Create account is successful! </h1>";
 									}
 							?></tr>
 						<tr> <h1> Welcome to Online Food Ordering System! </h1> </tr>
