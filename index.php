@@ -1,4 +1,9 @@
-<?php require_once ("header.php"); ?>
+<?php require_once ("header.php");		// acts like include(); displays the header of the html 
+	if (isset ($_SESSION['username'])) {										// check if user is logged in
+		if ($_SESSION['username'] == "admin") header ("Location: admin.php");	// if "admin", redirect to admin page
+		else header ("Location: user.php");										// if typical user, redirect to user page
+		}
+?>
 			<article id="login">
 			<br />
 			<br />
